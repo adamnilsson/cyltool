@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+\section{Without heat expansion}
+Balance equation:
+\begin{equation}
+r \frac{\partial \sigma_r}{\partial r} + \sigma_r - \sigma_{\varphi} = r \rho
+\end{equation}
+
+More common form:
+\begin{equation}
+\frac{\partial \sigma_r}{\partial r} + \frac{\sigma_r - \sigma_{\varphi}}{r} = \rho
+\end{equation}
+
+\subsection{Kinematics Relations}
+\begin{equation}
+\varepsilon_r = \frac{\partial u}{\partial r}
+\end{equation}
+\begin{equation}
+\varepsilon_{\varphi} = \frac{u}{r}
+\end{equation}
+\begin{equation}
+\frac{\partial \varepsilon_r}{\partial r} = \frac{\partial^2 u}{\partial r^2}
+\end{equation}
+\begin{equation}
+\frac{\partial \varepsilon_{\varphi}}{\partial r} = \frac{1}{r}\frac{\partial u}{\partial r} - \frac{u}{r^2}
+\end{equation}
+
+\subsection{Solution Functions}
+For a tube:
+\begin{equation}
+u(r) = \left[\begin{array}{cc}
+r  & \frac{1}{r} 
+\end{array} \right] 
+\left[ \begin{array}{c}
+c1 \\ c2
+\end{array}\right] - \frac{1-v^2}{8E}\rho\ \omega^2
+\end{equation}
+\begin{equation}
+\sigma_r(r) = \frac{E}{1-v^2}
+\left[\begin{array}{cc}
+1+v  & \frac{v-1}{r^2} 
+\end{array} \right]
+\left[ \begin{array}{c}
+c1 \\ c2
+\end{array}\right] - 
+\frac{3+v}{8} r^2 \rho \ \omega^2
+\end{equation}
+
+\subsubsection{Solid Shaft}
+For the solid shaft
+\begin{equation}
+u(r) = \frac{\sigma}{E} r
+\end{equation}
+\begin{equation}
+\sigma(r) = \sigma = konstant
+\end{equation}
+\end{document}
+
+Boundary conditions:
+\begin{equation}
+u(0) = 0
+\end{equation}
